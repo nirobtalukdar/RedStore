@@ -18,7 +18,7 @@
                     </a>
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="menuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
@@ -27,6 +27,7 @@
                     </ul>
                 </nav>
                 <img src="./images/cart.png" alt="" width="30px" height="30px">
+                <img src="./images/menu.png" alt="" class="menuIcon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col2">
@@ -226,7 +227,7 @@
                     <h1>Smart Band 4</h1>
                     <small>
                         The Mi Smart Band 4 Features a 39.9% Larger (Then Mi Band 3) AMOLED Color full-touch display with adjustable brightness, so everything is clear as can be
-                    </small>
+                    </small> <br>
                     <a href="" class="btn">Buy Now &#8594;</a>
                 </div>
             </div>
@@ -280,5 +281,86 @@
         </div>
     </section>
     <!-- Testimonial -->
+    <!-- Brand -->
+    <section id="brands">
+        <div class="smallContainer">
+            <div class="row">
+                <div class="col5">
+                    <img src="./images/logo-godrej.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="./images/logo-oppo.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="./images/logo-coca-cola.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="./images/logo-paypal.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="./images/logo-philips.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand -->
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footerCol1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios mobile phone</p>
+                    <div class="appLogo">
+                        <img src="./images/play-store.png" alt="">
+                        <img src="./images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footerCol2">
+                    <img src="./images/logo-white.png" alt="">
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to many.</p>
+                </div>
+                <div class="footerCol3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footerCol4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyWright">
+                &copy; Copyright 2022 - Nasim Talukdar Nirob
+            </p>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- JavaScript Code -->
+    <!-- Js For Menu toggle -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- Js For Menu toggle -->
+    <!-- JavaScript Code -->
 </body>
 </html>

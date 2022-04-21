@@ -46,6 +46,11 @@ h4{
 .btn:hover{
     background: #563434;
 }
+.menuIcon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
 /* Common Css */
 /* Header Css */
 #header{
@@ -196,3 +201,156 @@ small{
     font-weight: 600;
 }
 /* Testimonial Css */
+/* Brand Css */
+#brands{
+    margin: 100px auto;
+}
+.col5{
+    width: 160px;
+}
+.col5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all linear .3s;
+}
+.col5 img:hover{
+    filter: grayscale(0%);
+}
+/* Brand Css */
+/* Footer Css */
+#footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+#footer p{
+    color: #8a8a8a;
+}
+#footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footerCol1, .footerCol2, .footerCol3, .footerCol4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footerCol1{
+    flex-basis: 30%;
+}
+.footerCol2{
+    flex: 1;
+    text-align: center;
+}
+.footerCol2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footerCol3, .footerCol4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.appLogo{
+    margin-top: 20px;
+}
+.appLogo img{
+    width: 140px;
+}
+#footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyWright{
+    text-align: center;
+}
+/* Footer Css */
+/* Responsive Css */
+@media only screen and (max-width: 480px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        overflow: hidden;
+        transition: all linear .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 50px 10px 0;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menuIcon{
+        display: block;
+        cursor: pointer;
+    }
+    .row{
+        text-align: center;
+    }
+    .col2, .col3, .col4{
+        flex-basis: 100%;
+        min-width: 300px;
+    }
+    .col2 .offerImg {
+        padding: 20px;
+    }
+}
+
+/* Responsive Css */
+@media only screen and (min-width:481px) and (max-width: 768px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        overflow: hidden;
+        transition: all linear .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 50px 10px 0;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menuIcon{
+        display: block;
+        cursor: pointer;
+    }
+    .col3 {
+        flex-basis: 100%;
+        min-width: 450px;
+        margin-bottom: 30px;
+    }
+    .col2 {
+        flex-basis: 50%;
+        min-width: 450px;
+    }
+    .col5 {
+        width: 83px;
+    }
+    .col4 {
+        flex-basis: 50%;
+        min-width: 175px;
+    }
+    .footerCol2 {
+        flex-basis: 100%;
+        margin: 50px 0;
+    }
+    .footerCol1{
+        flex-basis: 100%;
+    }
+    .footerCol4{
+        flex-basis: 50% !important;
+        min-width: 0 !important;
+    }
+    .row{
+        text-align: center;
+    }
+}
