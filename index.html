@@ -13,20 +13,20 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="">
+                    <a href="index.html">
                         <img src="./images/logo.png" alt="" width="125px">
                     </a>
                 </div>
                 <nav>
                     <ul id="menuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Account</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="productdetails.html">Product Details</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-                <img src="./images/cart.png" alt="" width="30px" height="30px">
+                <a href="cart.html"><img src="./images/cart.png" alt="" width="30px" height="30px" class="cartImg"></a>
                 <img src="./images/menu.png" alt="" class="menuIcon" onclick="menutoggle()">
             </div>
             <div class="row">
@@ -346,21 +346,6 @@
         </div>
     </footer>
     <!-- Footer -->
-    <!-- JavaScript Code -->
-    <!-- Js For Menu toggle -->
-    <script>
-        var menuItems = document.getElementById("menuItems");
-        menuItems.style.maxHeight = "0px";
-        function menutoggle(){
-            if(menuItems.style.maxHeight == "0px"){
-                menuItems.style.maxHeight = "200px";
-            }
-            else{
-                menuItems.style.maxHeight = "0px";
-            }
-        }
-    </script>
-    <!-- Js For Menu toggle -->
-    <!-- JavaScript Code -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
