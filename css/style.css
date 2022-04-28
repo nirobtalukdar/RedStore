@@ -468,42 +468,6 @@ form a{
     transition: transform 1s;
 }
 /* Account Css */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive Css */
 @media only screen and (max-width: 480px){
     nav ul{
@@ -514,6 +478,10 @@ form a{
         background: #333;
         overflow: hidden;
         transition: all linear .5s;
+    }
+    .cartImg {
+        cursor: pointer;
+        margin-top: 0px;
     }
     nav ul li{
         display: block;
@@ -557,6 +525,10 @@ form a{
         background: #333;
         overflow: hidden;
         transition: all linear .5s;
+    }
+    .cartImg {
+        cursor: pointer;
+        margin-top: 0px;
     }
     nav ul li{
         display: block;
